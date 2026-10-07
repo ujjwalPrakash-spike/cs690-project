@@ -1,0 +1,340 @@
+{
+  "timestamp": "2026-10-06T20:02:55Z",
+  "model": "gemini-3.5-flash-lite",
+  "niche_annotation_agreement": {
+    "free_form_gemini_banksy": {
+      "n_niches": 7,
+      "exact_match_rate": 0.0,
+      "partial_match_rate": 0.2857142857142857,
+      "mismatch_rate": 0.7142857142857143,
+      "mean_agreement_score": 0.14285714285714285,
+      "confident_wrong_count": 3,
+      "mean_confidence": 68.28571428571429,
+      "details": [
+        {
+          "niche_id": "BANKSY_0",
+          "predicted_label": "Unknown",
+          "true_dominant_region": "Layer1",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 1",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "BANKSY_1",
+          "predicted_label": "Neuronal niche",
+          "true_dominant_region": "Layer5",
+          "match_category": "partial",
+          "explanation": "General cortical/neuronal label corresponding to Layer 5",
+          "confidence": 98,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "BANKSY_2",
+          "predicted_label": "Unknown",
+          "true_dominant_region": "Layer6",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 6",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "BANKSY_3",
+          "predicted_label": "Oligodendrocytes",
+          "true_dominant_region": "WM",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region WM",
+          "confidence": 95,
+          "confident_wrong": true
+        },
+        {
+          "niche_id": "BANKSY_4",
+          "predicted_label": "Neuronal Niche",
+          "true_dominant_region": "Layer3",
+          "match_category": "partial",
+          "explanation": "General cortical/neuronal label corresponding to Layer 3",
+          "confidence": 95,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "BANKSY_5",
+          "predicted_label": "Secretory Epithelial Cells",
+          "true_dominant_region": "Layer2",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 2",
+          "confidence": 95,
+          "confident_wrong": true
+        },
+        {
+          "niche_id": "BANKSY_6",
+          "predicted_label": "Oligodendrocytes",
+          "true_dominant_region": "Layer6",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 6",
+          "confidence": 95,
+          "confident_wrong": true
+        }
+      ]
+    },
+    "free_form_gemini_cellcharter": {
+      "n_niches": 7,
+      "exact_match_rate": 0.0,
+      "partial_match_rate": 0.2857142857142857,
+      "mismatch_rate": 0.7142857142857143,
+      "mean_agreement_score": 0.14285714285714285,
+      "confident_wrong_count": 2,
+      "mean_confidence": 53.285714285714285,
+      "details": [
+        {
+          "niche_id": "CellCharter_0",
+          "predicted_label": "Smooth Muscle Cells",
+          "true_dominant_region": "Layer1",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 1",
+          "confidence": 95,
+          "confident_wrong": true
+        },
+        {
+          "niche_id": "CellCharter_1",
+          "predicted_label": "Oligodendrocytes",
+          "true_dominant_region": "WM",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region WM",
+          "confidence": 98,
+          "confident_wrong": true
+        },
+        {
+          "niche_id": "CellCharter_2",
+          "predicted_label": "Unknown",
+          "true_dominant_region": "Layer6",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 6",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "CellCharter_3",
+          "predicted_label": "Unknown",
+          "true_dominant_region": "Layer6",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 6",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "CellCharter_4",
+          "predicted_label": "Unknown",
+          "true_dominant_region": "Layer5",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 5",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "CellCharter_5",
+          "predicted_label": "Cortical Neurons",
+          "true_dominant_region": "Layer3",
+          "match_category": "partial",
+          "explanation": "Biologically compatible marker/cell-type for Layer 3 (cortical)",
+          "confidence": 90,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "CellCharter_6",
+          "predicted_label": "Neuronal Niche",
+          "true_dominant_region": "Layer3",
+          "match_category": "partial",
+          "explanation": "General cortical/neuronal label corresponding to Layer 3",
+          "confidence": 90,
+          "confident_wrong": false
+        }
+      ]
+    },
+    "nicheagent_banksy": {
+      "n_niches": 7,
+      "exact_match_rate": 0.42857142857142855,
+      "partial_match_rate": 0.0,
+      "mismatch_rate": 0.5714285714285714,
+      "mean_agreement_score": 0.42857142857142855,
+      "confident_wrong_count": 0,
+      "mean_confidence": 0.0,
+      "details": [
+        {
+          "niche_id": "BANKSY_0",
+          "predicted_label": "Layer 1",
+          "true_dominant_region": "Layer1",
+          "match_category": "exact",
+          "explanation": "Direct biological match to Layer 1 (layer 1)",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "BANKSY_1",
+          "predicted_label": "Layer 5",
+          "true_dominant_region": "Layer5",
+          "match_category": "exact",
+          "explanation": "Direct biological match to Layer 5 (layer 5)",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "BANKSY_2",
+          "predicted_label": "Layer 5",
+          "true_dominant_region": "Layer6",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 6",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "BANKSY_3",
+          "predicted_label": "White Matter",
+          "true_dominant_region": "WM",
+          "match_category": "exact",
+          "explanation": "Direct biological match to WM (white matter)",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "BANKSY_4",
+          "predicted_label": "Layer 2",
+          "true_dominant_region": "Layer3",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 3",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "BANKSY_5",
+          "predicted_label": "Layer 1",
+          "true_dominant_region": "Layer2",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 2",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "BANKSY_6",
+          "predicted_label": "White Matter",
+          "true_dominant_region": "Layer6",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 6",
+          "confidence": 0,
+          "confident_wrong": false
+        }
+      ]
+    },
+    "nicheagent_cellcharter": {
+      "n_niches": 7,
+      "exact_match_rate": 0.42857142857142855,
+      "partial_match_rate": 0.0,
+      "mismatch_rate": 0.5714285714285714,
+      "mean_agreement_score": 0.42857142857142855,
+      "confident_wrong_count": 0,
+      "mean_confidence": 0.0,
+      "details": [
+        {
+          "niche_id": "CellCharter_0",
+          "predicted_label": "Layer 1",
+          "true_dominant_region": "Layer1",
+          "match_category": "exact",
+          "explanation": "Direct biological match to Layer 1 (layer 1)",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "CellCharter_1",
+          "predicted_label": "White Matter",
+          "true_dominant_region": "WM",
+          "match_category": "exact",
+          "explanation": "Direct biological match to WM (white matter)",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "CellCharter_2",
+          "predicted_label": "Layer 5",
+          "true_dominant_region": "Layer6",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 6",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "CellCharter_3",
+          "predicted_label": "White Matter",
+          "true_dominant_region": "Layer6",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 6",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "CellCharter_4",
+          "predicted_label": "Layer 5",
+          "true_dominant_region": "Layer5",
+          "match_category": "exact",
+          "explanation": "Direct biological match to Layer 5 (layer 5)",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "CellCharter_5",
+          "predicted_label": "Layer 2",
+          "true_dominant_region": "Layer3",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 3",
+          "confidence": 0,
+          "confident_wrong": false
+        },
+        {
+          "niche_id": "CellCharter_6",
+          "predicted_label": "Layer 2",
+          "true_dominant_region": "Layer3",
+          "match_category": "mismatch",
+          "explanation": "Discordant with dominant region Layer 3",
+          "confidence": 0,
+          "confident_wrong": false
+        }
+      ]
+    }
+  },
+  "spot_level_spatial_clustering_metrics": {
+    "banksy_unsupervised_clusters": {
+      "ARI": 0.3507,
+      "NMI": 0.5101,
+      "accuracy": 0.0,
+      "macro_F1": 0.0,
+      "balanced_accuracy": 0.0,
+      "homogeneity": 0.5124,
+      "completeness": 0.5078
+    },
+    "cellcharter_unsupervised_clusters": {
+      "ARI": 0.4489,
+      "NMI": 0.6376,
+      "accuracy": 0.0,
+      "macro_F1": 0.0,
+      "balanced_accuracy": 0.0,
+      "homogeneity": 0.6445,
+      "completeness": 0.6308
+    },
+    "nicheagent_banksy_smoothed": {
+      "ARI": 0.3165,
+      "NMI": 0.5154,
+      "accuracy": 0.1421,
+      "macro_F1": 0.0849,
+      "balanced_accuracy": 0.1429,
+      "homogeneity": 0.4386,
+      "completeness": 0.6248
+    },
+    "nicheagent_cellcharter_smoothed": {
+      "ARI": 0.4058,
+      "NMI": 0.5939,
+      "accuracy": 0.1421,
+      "macro_F1": 0.0824,
+      "balanced_accuracy": 0.1429,
+      "homogeneity": 0.4974,
+      "completeness": 0.737
+    }
+  }
+}

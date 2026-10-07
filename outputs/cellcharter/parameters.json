@@ -1,0 +1,19 @@
+{
+  "method": "CellCharter",
+  "implementation": "cellcharter 0.3.7",
+  "n_neighbors": 10,
+  "n_layers": 3,
+  "n_pcs": 20,
+  "n_clusters": 7,
+  "random_state": 42,
+  "n_spots": 3639,
+  "cluster_distribution": {
+    "CellCharter_4": 913,
+    "CellCharter_5": 690,
+    "CellCharter_2": 656,
+    "CellCharter_1": 420,
+    "CellCharter_6": 414,
+    "CellCharter_3": 313,
+    "CellCharter_0": 233
+  }
+}

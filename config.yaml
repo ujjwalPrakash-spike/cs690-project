@@ -1,0 +1,61 @@
+# Project Configuration for Spatial Transcriptomics Niche Annotation Pipeline
+
+seed: 42
+data_path: "151673.h5ad"
+ground_truth_path: "data/ground_truth_151673.csv"
+
+# Phase 2: Niche Detection Parameters
+banksy:
+  coord_keys: ["array_row", "array_col"]
+  k_geom: 15
+  lambda_param: 0.2
+  n_pcs: 20
+  n_clusters: 7
+  random_state: 42
+
+cellcharter:
+  coord_keys: ["array_row", "array_col"]
+  n_neighbors: 10
+  n_clusters: 7
+  n_layers: 3
+  random_state: 42
+
+# Phase 3: Marker Gene Extraction
+differential_expression:
+  method: "wilcoxon"
+  top_n: 10
+  tie_correct: true
+
+# Phase 4 & 5: LLM Experiment Settings
+gemini:
+  default_model: "gemini-3.5-flash-lite"
+  temperature: 0.2
+  max_output_tokens: 1024
+  reproducibility_repetitions: 5
+  reproducibility_niche_sample: 3
+
+# Phase 6: NicheAgent Pipeline Settings
+nicheagent:
+  confidence_margin_tau: 0.15
+  spatial_smoothing_rounds: 1
+  k_spatial_neighbors: 6
+  allowed_labels:
+    - "Layer 1"
+    - "Layer 2"
+    - "Layer 3"
+    - "Layer 4"
+    - "Layer 5"
+    - "Layer 6"
+    - "White Matter"
+
+outputs:
+  base_dir: "outputs"
+  data_inspection_dir: "outputs/data_inspection"
+  banksy_dir: "outputs/banksy"
+  cellcharter_dir: "outputs/cellcharter"
+  free_form_dir: "outputs/free_form_gemini"
+  reproducibility_dir: "outputs/reproducibility"
+  nicheagent_dir: "outputs/nicheagent"
+  evaluation_dir: "outputs/evaluation"
+  figures_dir: "outputs/figures"
+  logs_dir: "outputs/logs"

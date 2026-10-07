@@ -1,0 +1,124 @@
+{
+  "dataset_path": "/home/ujjwal/Desktop/01 Academics/CS690/project/151673.h5ad",
+  "n_obs": 3639,
+  "n_vars": 33538,
+  "obs_columns": [
+    "in_tissue",
+    "array_row",
+    "array_col"
+  ],
+  "var_columns": [
+    "gene_ids",
+    "feature_types",
+    "genome",
+    "highly_variable",
+    "highly_variable_rank",
+    "means",
+    "variances",
+    "variances_norm",
+    "mean",
+    "std"
+  ],
+  "obsm_keys": [
+    "spatial"
+  ],
+  "layers": [],
+  "uns_keys": [
+    "hvg",
+    "log1p",
+    "spatial"
+  ],
+  "raw_available": false,
+  "spatial_coordinates": {
+    "key": "obsm['spatial']",
+    "shape": [
+      3639,
+      2
+    ],
+    "dtype": "int64",
+    "x_min": 3096.0,
+    "x_max": 11062.0,
+    "y_min": 2437.0,
+    "y_max": 11584.0,
+    "sample_coords": [
+      [
+        9791,
+        8468
+      ],
+      [
+        5769,
+        2807
+      ],
+      [
+        4068,
+        9505
+      ],
+      [
+        9271,
+        4151
+      ],
+      [
+        3393,
+        7583
+      ]
+    ]
+  },
+  "image_availability": {
+    "has_images": true,
+    "details": {
+      "151673": {
+        "available_images": [
+          "hires",
+          "lowres"
+        ],
+        "scalefactors": [
+          "fiducial_diameter_fullres",
+          "spot_diameter_fullres",
+          "tissue_hires_scalef",
+          "tissue_lowres_scalef"
+        ]
+      }
+    }
+  },
+  "preprocessing_state": {
+    "inferred_state": "normalized and log1p-transformed",
+    "is_integer_sample": false,
+    "min_value": 0.0,
+    "max_value": 10.0,
+    "has_negative_values": false,
+    "uns_has_log1p": true,
+    "uns_has_hvg": true,
+    "matrix_format": "<class 'scipy.sparse._csr.csr_matrix'>"
+  },
+  "obs_summary": {
+    "in_tissue": {
+      "dtype": "int64",
+      "num_unique": 1,
+      "sample_values": [
+        "1"
+      ]
+    },
+    "array_row": {
+      "dtype": "int64",
+      "num_unique": 76,
+      "sample_values": [
+        "50",
+        "3",
+        "59",
+        "14",
+        "43"
+      ]
+    },
+    "array_col": {
+      "dtype": "int64",
+      "num_unique": 116,
+      "sample_values": [
+        "102",
+        "43",
+        "19",
+        "94",
+        "9"
+      ]
+    }
+  }
+}

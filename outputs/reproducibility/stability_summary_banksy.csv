@@ -1,0 +1,4 @@
+method,niche_id,repetitions,unique_labels_count,exact_self_agreement,mean_confidence,confidence_std,dominant_label,all_observed_labels
+BANKSY,BANKSY_0,5,1,1.0,0.0,0.0,unknown,['unknown']
+BANKSY,BANKSY_1,5,1,1.0,0.0,0.0,unknown,['unknown']
+BANKSY,BANKSY_2,5,1,1.0,0.0,0.0,unknown,['unknown']

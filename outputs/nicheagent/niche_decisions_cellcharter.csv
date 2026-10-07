@@ -1,0 +1,8 @@
+method,niche_id,top1_prototype,top1_score,top2_prototype,top2_score,margin,is_low_confidence,llm_adjudicated,final_niche_label
+CellCharter,CellCharter_0,Layer 1,0.0,Layer 2,0.0,0.0,True,True,Layer 1
+CellCharter,CellCharter_1,White Matter,1.0,Layer 1,0.0,1.0,False,False,White Matter
+CellCharter,CellCharter_2,Layer 5,0.16666666666666666,Layer 6,0.16666666666666666,0.0,True,True,Layer 5
+CellCharter,CellCharter_3,White Matter,0.8333333333333334,Layer 1,0.16666666666666666,0.6666666666666667,False,False,White Matter
+CellCharter,CellCharter_4,Layer 5,0.3333333333333333,Layer 4,0.2,0.1333333333333333,True,True,Layer 5
+CellCharter,CellCharter_5,Layer 2,0.5,Layer 3,0.5,0.0,True,True,Layer 2
+CellCharter,CellCharter_6,Layer 2,0.16666666666666666,Layer 1,0.0,0.16666666666666666,False,False,Layer 2

@@ -1,0 +1,83 @@
+{
+  "method": "NicheAgent-Style Framework",
+  "cluster_input_method": "CellCharter",
+  "implementation_fidelity": {
+    "exact_reproduction": [
+      "NicheCards structure with canonical markers and aliases",
+      "Deterministic prototype expression/marker scoring",
+      "Confidence margin filtering (Delta = S(1) - S(2))",
+      "Constrained LLM review strictly for low-confidence cases (margin < tau)",
+      "Closed-world ontology enforcement",
+      "Spatial graph neighborhood smoothing"
+    ],
+    "approximations": [
+      "Spatial neighborhood context summarized from k=6 Visium graph rather than continuous attention weights",
+      "Closed-world vocabulary restricted to DLPFC cortical layers 1-6 and White Matter"
+    ],
+    "newly_implemented": [
+      "Direct wrapper supporting both BANKSY and CellCharter spatial cluster inputs",
+      "Automated JSON schema validation via Google GenAI SDK"
+    ]
+  },
+  "parameters": {
+    "confidence_margin_tau": 0.15,
+    "spatial_smoothing_rounds": 1,
+    "k_spatial_neighbors": 6,
+    "allowed_labels": [
+      "Layer 1",
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 5",
+      "Layer 6",
+      "White Matter"
+    ]
+  },
+  "llm_reviews_conducted": 4,
+  "reviews": [
+    {
+      "niche_id": "CellCharter_0",
+      "proposed_label": "Layer 1",
+      "raw_llm_label": "Layer 1",
+      "adjudicated_label": "Layer 1",
+      "short_justification": "Although the marker profile includes smooth muscle and vascular markers like ACTA2, MYH11, and MYL9 indicating vascular association, the low-confidence prototype assignment defaults to Layer 1 within the constrained cortical layers vocabulary.",
+      "confidence": 45,
+      "raw_response": "{\n  \"biological_label\": \"Layer 1\",\n  \"short_justification\": \"Although the marker profile includes smooth muscle and vascular markers like ACTA2, MYH11, and MYL9 indicating vascular association, the low-confidence prototype assignment defaults to Layer 1 within the constrained cortical layers vocabulary.\",\n  \"confidence\": 45\n}",
+      "timestamp": "2026-10-06T19:52:02Z",
+      "status": "success"
+    },
+    {
+      "niche_id": "CellCharter_2",
+      "proposed_label": "Layer 5",
+      "raw_llm_label": "Layer 5",
+      "adjudicated_label": "Layer 5",
+      "short_justification": "The marker genes include SLC17A7 and NR4A2, which are characteristic of deep cortical layers, supporting the prototype assignment of Layer 5 despite the low similarity margin.",
+      "confidence": 75,
+      "raw_response": "{\n  \"biological_label\": \"Layer 5\",\n  \"short_justification\": \"The marker genes include SLC17A7 and NR4A2, which are characteristic of deep cortical layers, supporting the prototype assignment of Layer 5 despite the low similarity margin.\",\n  \"confidence\": 75\n}",
+      "timestamp": "2026-10-06T19:52:03Z",
+      "status": "success"
+    },
+    {
+      "niche_id": "CellCharter_4",
+      "proposed_label": "Layer 5",
+      "raw_llm_label": "Layer 5",
+      "adjudicated_label": "Layer 5",
+      "short_justification": "The presence of canonical layer 5 marker genes such as PCP4, NEFH, and NEFM strongly supports the assignment of Layer 5.",
+      "confidence": 85,
+      "raw_response": "{\n  \"biological_label\": \"Layer 5\",\n  \"short_justification\": \"The presence of canonical layer 5 marker genes such as PCP4, NEFH, and NEFM strongly supports the assignment of Layer 5.\",\n  \"confidence\": 85\n}",
+      "timestamp": "2026-10-06T19:52:04Z",
+      "status": "success"
+    },
+    {
+      "niche_id": "CellCharter_5",
+      "proposed_label": "Layer 2",
+      "raw_llm_label": "Layer 2",
+      "adjudicated_label": "Layer 2",
+      "short_justification": "The presence of canonical upper-layer markers such as CUX2, HOPX, and CALB1 strongly supports assignment to Layer 2, confirming the prototype match despite a low similarity margin.",
+      "confidence": 85,
+      "raw_response": "{\n  \"biological_label\": \"Layer 2\",\n  \"short_justification\": \"The presence of canonical upper-layer markers such as CUX2, HOPX, and CALB1 strongly supports assignment to Layer 2, confirming the prototype match despite a low similarity margin.\",\n  \"confidence\": 85\n}",
+      "timestamp": "2026-10-06T19:52:05Z",
+      "status": "success"
+    }
+  ]
+}

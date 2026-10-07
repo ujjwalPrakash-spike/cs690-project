@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-10-06T19:53:50Z",
+  "dataset_path": "151673.h5ad",
+  "elapsed_seconds": 15.31,
+  "software_versions": {
+    "scanpy": "1.11.5",
+    "anndata": "anndata._core.anndata",
+    "pybanksy": "1.3.5",
+    "cellcharter": "0.3.7",
+    "google_genai": "2.28.0"
+  },
+  "model": "gemini-3.5-flash-lite",
+  "parameters": {
+    "seed": 42,
+    "data_path": "151673.h5ad",
+    "ground_truth_path": "data/ground_truth_151673.csv",
+    "banksy": {
+      "coord_keys": [
+        "array_row",
+        "array_col"
+      ],
+      "k_geom": 15,
+      "lambda_param": 0.2,
+      "n_pcs": 20,
+      "n_clusters": 7,
+      "random_state": 42
+    },
+    "cellcharter": {
+      "coord_keys": [
+        "array_row",
+        "array_col"
+      ],
+      "n_neighbors": 10,
+      "n_clusters": 7,
+      "n_layers": 3,
+      "random_state": 42
+    },
+    "differential_expression": {
+      "method": "wilcoxon",
+      "top_n": 10,
+      "tie_correct": true
+    },
+    "gemini": {
+      "default_model": "gemini-3.5-flash-lite",
+      "temperature": 0.2,
+      "max_output_tokens": 1024,
+      "reproducibility_repetitions": 5,
+      "reproducibility_niche_sample": 3
+    },
+    "nicheagent": {
+      "confidence_margin_tau": 0.15,
+      "spatial_smoothing_rounds": 1,
+      "k_spatial_neighbors": 6,
+      "allowed_labels": [
+        "Layer 1",
+        "Layer 2",
+        "Layer 3",
+        "Layer 4",
+        "Layer 5",
+        "Layer 6",
+        "White Matter"
+      ]
+    },
+    "outputs": {
+      "base_dir": "outputs",
+      "data_inspection_dir": "outputs/data_inspection",
+      "banksy_dir": "outputs/banksy",
+      "cellcharter_dir": "outputs/cellcharter",
+      "free_form_dir": "outputs/free_form_gemini",
+      "reproducibility_dir": "outputs/reproducibility",
+      "nicheagent_dir": "outputs/nicheagent",
+      "evaluation_dir": "outputs/evaluation",
+      "figures_dir": "outputs/figures",
+      "logs_dir": "outputs/logs"
+    }
+  },
+  "status": "COMPLETED_SUCCESSFULLY"
+}
